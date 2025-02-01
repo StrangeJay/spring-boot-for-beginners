@@ -23,9 +23,8 @@ jobs:
     - name: Unit Tests
       run: mvn -B test --file pom.xml
 
-# the pipe | is for when you want to write multiple commands in one run step.
+# the pipe | is for when you want to write multiple commands in one run step. Like clean and package.
     - name: Build the application
       run: |
         mvn clean
         mvn -B package --file pom.xml
-        
